@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm test",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend-dev": "env-cmd -f ./.env nodemon server"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
