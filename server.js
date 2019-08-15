@@ -3,12 +3,12 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const passport = require('passport');
 
 // Connect to database
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URL||'mongodb://localhost/AWT_Project', {useNewUrlParser: true, useCreateIndex: true});
+mongoose.connect(process.env.MONGODB_URI||'mongodb://localhost/AWT_Project', {useNewUrlParser: true, useCreateIndex: true});
 const connection = mongoose.connection;
 connection.once('open', function() {
   console.log('MongoDB database connection established successfully');
