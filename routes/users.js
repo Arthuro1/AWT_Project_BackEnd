@@ -27,20 +27,6 @@ router
   .get(passportAutthentification('jwt', false), UserController.secret);
 
 router
-  .route('/oauth/google')
-  .post(
-    passportAutthentification('googleToken', false),
-    UserController.googleOAuth
-  );
-
-router
-  .route('/oauth/facebook')
-  .post(
-    passportAutthentification('facebookToken', false),
-    UserController.facebookOAuth
-  );
-
-router
     .route('/post-comment')
     .post(
         passportAutthentification('jwt', false),
