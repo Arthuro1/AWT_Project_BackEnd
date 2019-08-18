@@ -12,6 +12,11 @@ router
     .route('/addBooks')
     .post(
         BookController.addBooks);
+router
+    .route('/getBookById')
+    .post(
+        passportAutthentification('jwt', false),
+        BookController.getBookById);
 
 router
     .route('/comment')

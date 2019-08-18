@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "backend-dev": "env-cmd -f ./.env nodemon server"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,6 +15,7 @@
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.1",
     "cors": "^2.8.5",
+    "env-cmd": "^9.0.3",
     "express": "^4.17.1",
     "express-promise-router": "^3.0.3",
     "google-books-search": "^0.3.1",

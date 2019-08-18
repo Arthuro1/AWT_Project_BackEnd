@@ -61,6 +61,17 @@ const userSchema = new Schema({
 
   commentIds: [],
 
+  myRatings:[
+    {
+      idOfBook: {
+        type: String,
+      },
+      rating:{
+        type: Number,
+      }
+    }
+  ],
+
   creationDate: {
     type: Date,
     default: Date.now,

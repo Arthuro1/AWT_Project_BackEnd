@@ -30,6 +30,7 @@ module.exports = {
       local: {name, email, password},
       imageUrl: '',
       commentIds: [],
+      myRatings: []
     });
     await newUser.save();
 
