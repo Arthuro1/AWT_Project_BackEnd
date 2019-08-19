@@ -10,7 +10,7 @@ const passportAutthentification = (strategyName, isWithSession) => {
 
 router
     .route('/addBooks')
-    .post(
+    .post(  passportAutthentification('jwt', false),
         BookController.addBooks);
 router
     .route('/getBookById')
