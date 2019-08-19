@@ -177,7 +177,7 @@ module.exports = {
     topRatedBooks: async (req, res, next) => {
         const topRatedBooks = await Book.find()
             .sort({'rating.average': -1})
-            .limit(6);
+            .limit(10);
         if (topRatedBooks) {
             res.status(200).send(topRatedBooks);
         } else {
