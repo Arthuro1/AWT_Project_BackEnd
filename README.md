@@ -1,6 +1,5 @@
 # AWT_Project_BackEnd  [![node: v10.15.1](https://img.shields.io/badge/node-v10.15.1-green.svg?style=flat-square)](https://nodejs.org/dist/latest-v10.x/docs/api/) [![npm: $=v6.4.1](https://img.shields.io/badge/npm-%3E=v6.4.1.x-red.svg?style=flat-square)](https://www.npmjs.com/package/npm) 
- [![node: v10.15.1](https://img.shields.io/badge/node-v10.15.1-green.svg?style=flat-square)](https://nodejs.org/dist/latest-v10.x/docs/api/)
-This repository is the back-end of our our project **"BookIz"**
+ This repository is the back-end of our our project **"BookIz"**
 
 ## Local Installation
 ``` shell
