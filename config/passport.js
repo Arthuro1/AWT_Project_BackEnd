@@ -5,7 +5,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/user');
 const opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken('Authorization');
-opts.secretOrKey = process.env.JWT_SECRET;
+opts.secretOrKey = process.env.JWT_SECRET?process.env.JWT_SECRET:'mySecret';
 
 passport.use(
   new JwtStrategy(opts, async(jwt_payload, done) => {

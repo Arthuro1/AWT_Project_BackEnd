@@ -13,7 +13,6 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
-    "concurrently": "^4.1.1",
     "cors": "^2.8.5",
     "env-cmd": "^9.0.3",
     "express": "^4.17.1",
@@ -24,12 +23,8 @@
     "mongoose": "^5.6.0",
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
-    "passport-facebook-token": "^3.3.0",
-    "passport-google-plus-token": "^2.1.0",
     "passport-jwt": "^4.0.0",
-    "passport-local": "^1.0.0",
-    "pusher": "^2.2.1",
-    "pusher-js": "^4.4.0"
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"

@@ -2,7 +2,7 @@ const JWT = require('jsonwebtoken');
 
 const Comment = require('../models/comment');
 const User = require('../models/user');
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET?process.env.JWT_SECRET:'mySecret';
 
 const signToken = user => {
   return JWT.sign(
